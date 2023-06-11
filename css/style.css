@@ -9,7 +9,7 @@
 }
 
 /* Tutorial Coloring */
-:root {
+/* :root {
     --color-primary: #6c63ff;
     --color-success: #00bf83;
     --color-warning: #f7c94b;
@@ -28,7 +28,29 @@
 
     --transition: all 400ms ease;
     
-}
+} */
+
+/* Hedayat and me Coloring */
+    :root {
+        --color-primary: #598ecb;
+        --color-success: #00bf83;
+        --color-warning: #f7c94b;
+        --color-danger: #f94c66;
+        --color-danger-variant: rgba(247, 88,66, 0.4);
+        --color-white: #022534;
+        --color-light: rgba(255, 255, 255, 0.7);
+        --color-black: #eaf6f6;
+        --color-bg: #f5f3ff;
+        --color-bg1: #9ac5f4;
+        --color-bg2: #f5f3ff;
+
+        --container-width-lg: 80%;
+        --container-width-md: 90%;
+        --container-width-sm: 94%;
+
+        --transition: all 400ms ease;
+        
+    }
 
 /* My Coloring number 1 */
 /* :root {
@@ -143,7 +165,7 @@ img{
 
 .btn-primary{
     background: var(--color-danger);
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 
@@ -168,10 +190,15 @@ nav{
     /* opacity: 93%; */
 }
 
+.someting{
+    color: var(--color-black);
+}
+
 .nav__container{
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -192,10 +219,13 @@ nav button{
 .nav__menu a{
     font-size: 0.9rem;
     transition: var(--transition);
+    /* color: white; */
 }
 
 .nav__menu a:hover{
-    color: var(--color-bg2);
+    /* color: var(--color-bg); */
+    /* transform: scale(1); */
+    text-decoration: underline;
 }
 
 /* ============================== HEADER ========================== */
@@ -221,7 +251,7 @@ header{
 
 /* ============================== SECTION/CATEGORIES ========================== */
 .categories{
-    background: var(--color-bg1);
+    background: var(--color-primary);
     height: 35rem;
 
 }
@@ -229,6 +259,8 @@ header{
 .categories h1{
     line-height: 1;
     margin-bottom: 3rem;
+    color: var(--color-black);
+
 }
 
 .categories__container{
@@ -238,6 +270,7 @@ header{
 
 .categories__left p{
     margin: 1rem 0 3rem;
+    color: var(--color-black);
 }
 
 .categories__left{
@@ -307,16 +340,18 @@ header{
 }
 
 .course{
-    background: var(--color-bg1);
+    background: var(--color-primary);
     text-align: center;
     border: 1px solid transparent;
+    border-radius: 0 0 0.5rem 0.5rem;
     transition: var(--transition);
 }
 
 .course:hover{
     background: transparent;
     border-color: var(--color-primary);
-    border-radius: 0 0 5rem 5rem;
+    border-radius: 0 0 2rem 2rem;
+
     /* transition: var(--transition); */
 }
 
@@ -324,16 +359,35 @@ header{
     padding: 2rem;
 }
 
+.course__info h4{
+    color: var(--color-black);
+    transition: var(--transition);
+}
+
+.course:hover h4{
+    color: var(--color-white);
+}
+
 .course__info p{
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
+    color: var(--color-black);
+}
+
+.course p{
+    transition: var(--transition);
+}
+
+.course:hover p{
+    color: var(--color-white);
+
 }
 
 /* ============================== FAQs Section ========================== */
 
 .faqs{
     background: var(--color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset  0 0 3rem rgba(0, 0, 0, 0.2);
 }
 
 .faqs__container{
@@ -355,16 +409,19 @@ header{
 .faq h4{
     font-size: 1rem;
     line-height: 2.2;
+    color: var(--color-black);
 }
 
 .faq__icon{
     align-self: flex-start;
     font-size: 1.2rem;
+    color: var(--color-black);
 }
 
 .faq p{
     margin-top: 0.8rem;
     display: none;
+    color: var(--color-black);
 }
 
 .faq.open p{
@@ -397,6 +454,10 @@ header{
 
 .testimonial__info{
     text-align: center;
+}
+
+.testimonials__container p{
+    color: var(--color-black);
 }
 
 .testimonial__body{
@@ -443,6 +504,7 @@ footer{
 
 .footer__1 p{
     margin: 0 0 2rem;
+    /* color: var(--color-black); */
 }
 
 footer ul li{
@@ -453,11 +515,17 @@ footer ul li a:hover{
     text-decoration: underline;
 }
 
+
+
 .footer__socials{
     display: flex;
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
+}
+
+.footer__container a{
+    /* color: var(--color-bg); */
 }
 
 .footer__copyright{
@@ -593,6 +661,7 @@ header{
 .faq{
     padding: 1.5rem;
 }
+
 
 /* ============================== FOOTER ========================== */
 .footer__container{

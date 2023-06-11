@@ -3,6 +3,10 @@ window.addEventListener('scroll',()=>{
     document.querySelector('nav').classList.toggle('windows-scroll', window.scrollY>0);
 });
 
+window.addEventListener('scroll',()=>{
+    document.querySelector('a', 'h1').classList.toggle('someting', window.scrollY>0);
+});
+
 // Show/Hide FAQs Answer when toggled
 const faqs = document.querySelectorAll('.faq');
 faqs.forEach(faq=>{
